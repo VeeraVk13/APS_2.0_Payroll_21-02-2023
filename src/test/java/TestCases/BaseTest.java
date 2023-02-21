@@ -1,24 +1,18 @@
 package TestCases;
 
-import actionHelper.WebActionHelperMethods;
-
+import constant.APS_contsant;
 import driverManager.DriverManagerType;
 import driverManager.WebDrivers;
 
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-import com.constant.APS_contsant;
 
 import Pages_objects.Employeepage;
 import Pages_objects.LoginPage;
-import util.utility;
+import utillity.utility;
 
 import java.util.Properties;
 

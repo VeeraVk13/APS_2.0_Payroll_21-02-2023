@@ -631,10 +631,10 @@ public class WebActionHelperMethods{
 
     public static String Screenshot_method(String filename) throws IOException {
 
-        String dateName = new SimpleDateFormat("yyyyMMddhhmm").format(new Date());
+
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
         File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        String destination = System.getProperty("user.dir") + APS_contsant.Screen_Shot + filename + dateName + "_.png";
+        String destination = System.getProperty("user.dir") + APS_contsant.Screen_Shot + filename + dateName() + "_.png";
 
         FileUtils.copyFile(source, new File(destination));
 
@@ -643,7 +643,7 @@ public class WebActionHelperMethods{
     }
 
     public static String dateName() {
-        String dateName = new SimpleDateFormat("yyyyMMddhhmm").format(new Date());
+        String dateName = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
         return dateName;
     }
 
@@ -927,14 +927,29 @@ public class WebActionHelperMethods{
 
     }
 
-    public WebElement webdriverwait(WebElement element) {
+    public WebElement elementToBeClickable(WebElement element) {
+        try {
 
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement ele = wait.until(ExpectedConditions.elementToBeClickable(element));
-        highlightElement(ele);
-        clickbutton(ele);
-        return ele;
+            wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebElement ele = wait.until(ExpectedConditions.elementToBeClickable(element));
+            highlightElement(ele);
+            clickbutton(ele);
+            return ele;
+        } catch (WebDriverException driverException) {
+
+        }
+
+        return element;
     }
 
+    public WebElement implicitlyWait() {
+        try {
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        } catch (WebDriverException e)  {
+
+        }
+
+        return null;
+    }
 
 }
