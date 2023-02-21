@@ -1,25 +1,19 @@
 package listeners;
 
-import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.constant.APS_contsant;
+
 
 import actionHelper.WebActionHelperMethods;
-import driverManager.DriverManagerType;
-import driverManager.WebDrivers;
+import constant.APS_contsant;
 
-import org.apache.commons.mail.EmailException;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.TestListenerAdapter;
 
 import reportManager.ExtentManager;
-import util.utility;
 
 import java.util.concurrent.ConcurrentHashMap;
 

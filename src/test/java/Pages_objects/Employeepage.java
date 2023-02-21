@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.constant.APS_contsant;
+
 
 
 
@@ -44,12 +44,12 @@ public class Employeepage extends BasePageClass {
 
 	public void Empy_screen() throws Exception {
 
-		webActionHelperMethods.webdriverwait(Adminsetting);
+		webActionHelperMethods.elementToBeClickable(Adminsetting);
 
 	}
 
 	public void setting() throws Exception{
-		webActionHelperMethods.webdriverwait(setting);
+		webActionHelperMethods.elementToBeClickable(setting);
 
 	}
 
