@@ -1,0 +1,15 @@
+2023-02-22 10:46:26 INFO  LoginTestCases:20 - Get the URL
+2023-02-22 10:46:31 INFO  LoginTestCases:24 - checking the url is equal or not   https://uat-aps.azurewebsites.net/login
+2023-02-22 10:46:31 INFO  LoginTestCases:26 - sending the username =   digital@designpluz.com.au and password=   Design123$
+2023-02-22 10:51:45 INFO  LoginTestCases:20 - Get the URL
+2023-02-22 10:51:51 INFO  LoginTestCases:24 - checking the url is equal or not   https://uat-aps.azurewebsites.net/login
+2023-02-22 10:51:51 INFO  LoginTestCases:26 - sending the username =   digital@designpluz.com.au and password=   Design123$
+2023-02-22 10:53:27 INFO  LoginTestCases:20 - Get the URL
+2023-02-22 10:53:31 INFO  LoginTestCases:24 - checking the url is equal or not   https://uat-aps.azurewebsites.net/login
+2023-02-22 10:53:31 INFO  LoginTestCases:26 - sending the username =   digital@designpluz.com.au and password=   Design123$
+2023-02-22 13:01:53 INFO  LoginTestCases:20 - Get the URL
+2023-02-22 13:02:01 INFO  LoginTestCases:24 - checking the url is equal or not   https://uat-aps.azurewebsites.net/login
+2023-02-22 13:02:01 INFO  LoginTestCases:26 - sending the username =   digital@designpluz.com.au and password=   Design123$
+2023-02-22 13:36:18 INFO  LoginTestCases:20 - Get the URL
+2023-02-22 13:36:25 INFO  LoginTestCases:24 - checking the url is equal or not   https://uat-aps.azurewebsites.net/login
+2023-02-22 13:36:25 INFO  LoginTestCases:26 - sending the username =   digital@designpluz.com.au and password=   Design123$

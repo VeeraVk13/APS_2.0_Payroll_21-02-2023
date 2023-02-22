@@ -1,7 +1,5 @@
 package constant;
 
-import java.time.Duration;
-
 public class APS_contsant {
 	public static String URL;
 	public static String USERNAME;
@@ -16,7 +14,7 @@ public class APS_contsant {
 	public final static String LOG4J = "//src//main//resources//lo4j.properties";
 	public final static String connectionUrl = "jdbc:sqlserver://VEERA-IT;" + "databaseName=TESTING;"
 			+ "integratedSecurity=true;" + "encrpt=true;" + "trustServerCertificate=true";
-	
-	public final static String DBdriver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	public final static String EXCELPATH="/src/main/resources/wrong employee.xlsx";
+
+	public final static String DBdriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+	public final static String EXCELPATH = "\\src\\main\\resources\\wrongemployee.xlsx";
 }
